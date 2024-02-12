@@ -13,6 +13,14 @@ app.get('/status', (request, response) => {
    
    response.send(status);
 });
+app.get('/', (request, response) => {
+   const status = {
+      'Message': 'Hello world',
+      'author':'Ashutosh & gobinda'
+   };
+   
+   response.send(status);
+});
 
 app.listen(PORT, () => {
   console.log("Server Listening on PORT:", PORT);
