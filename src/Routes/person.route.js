@@ -1,6 +1,6 @@
-const express = require('express')
+const express = require('express');
 const router = express();
-const controller = require('../Controllers/personController')
+const controller = require('../Controllers/personController');
 
 
 /* METHODS */
