@@ -1,5 +1,5 @@
 const { Sequelize } = require("sequelize");
-const personModel = require("../models/person.model");
+const personModel = require("../Model/person.model.js");
 require("dotenv").config();
 
 const sequelize = new Sequelize(
@@ -12,6 +12,7 @@ const sequelize = new Sequelize(
         dialect: process.env.DIALECT,
         dialectOptions: {
             options: { encrypt: false },
+            requestTimeout: 30000 // timeout = 30 seconds
         },
     }
 );

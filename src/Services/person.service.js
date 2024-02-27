@@ -1,4 +1,4 @@
-const db = require("../config/db");
+const db = require("../config/config.db");
 
 const getAll = async () => {
     return await db.Person.findAll();
